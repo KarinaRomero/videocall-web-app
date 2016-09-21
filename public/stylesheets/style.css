@@ -1,0 +1,27 @@
+body{
+  background-color: #3A62E6;
+  margin-top: 15px;
+  font-family: sans-serif;
+  color:whitesmoke;
+}
+video{
+  background: black;
+  border: 1px solid gray;
+}
+.page{
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 500px;
+  height: 500px;
+}
+#yours{
+  width: 150px;
+  height: 150px;
+  top: 15px;
+  right: 15px;
+}
+#theirs{
+  width: 500px;
+  height: 500px;
+}
