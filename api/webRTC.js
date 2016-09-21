@@ -1,4 +1,5 @@
 /**
+ * @license
  * Created by Karina Romero on 30/06/2016.
  * Copyright © 2016 Sandcode Software S.A. de C.V. All rights reserved.
  */
@@ -75,7 +76,7 @@ function send(message) {
 }
 
 function onLogin(success) {
-    if (success == false) {
+    if (success === false) {
         alert("Login unsuccessful, please try a different name.");
     } else {
         loginPage.style.display = "none";
