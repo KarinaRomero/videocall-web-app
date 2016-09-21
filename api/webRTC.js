@@ -171,7 +171,7 @@ var yourVideo = document.querySelector('#yours'),
 
 function startConnection() {
     if (hasUserMedia()) {
-        navigator.getUserMedia({video: true, audio: false}, function (myStream) {
+        navigator.getUserMedia({video: true, audio: true}, function (myStream) {
             stream = myStream;
             yourVideo.src = window.URL.createObjectURL(stream);
 
