@@ -1,7 +1,5 @@
 /**
- * @license
  * Created by Karina Romero on 30/06/2016.
- * Copyright © 2016 Sandcode Software S.A. de C.V. All rights reserved.
  */
 var name="", connectedUser;
 var connection = new WebSocket('ws://162.243.206.15:8888');
@@ -110,7 +108,7 @@ function onOffer(offer, name) {
         send({type: "answer", answer: answer});
     }, function (error) {
         alert(error);
-    }, {'mandatory': {'OfferToReceiveAudio': true, 'OfferToReceiveVideo': true}});
+    }, {'mandatory': {'OfferToReceiveAudio': false, 'OfferToReceiveVideo': true}});
 
     console.log(yourConnection);
 
@@ -171,7 +169,7 @@ var yourVideo = document.querySelector('#yours'),
 
 function startConnection() {
     if (hasUserMedia()) {
-        navigator.getUserMedia({video: true, audio: true}, function (myStream) {
+        navigator.getUserMedia({video: true, audio: false}, function (myStream) {
             stream = myStream;
             yourVideo.src = window.URL.createObjectURL(stream);
 
