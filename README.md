@@ -9,5 +9,5 @@ Signaling channel, you can get it [here](https://github.com/KarinaRomero/signali
 # To start
 
 Firstly, you make sure that the signaling channel is running.
-You can navigate into videocall-web-app/bin and execute www file.
+You can run application with WebStorm.
 Navigate to http://localhost:3000/
